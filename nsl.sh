@@ -13,7 +13,7 @@ then
 	echo "./nsl.sh all"
 fi
 
-if [ $1 == 'all' ]
+if [[ $1 = 'all' ]]
 then
 	ls /usr/share/nmap/scripts/** | awk 'BEGIN { FS = "[/.]" }{print $6}'
 else
